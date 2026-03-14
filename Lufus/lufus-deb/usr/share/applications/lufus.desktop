@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Quick Lufus
+Comment=USB ISO Writer
+Exec=lufus
+Type=Application
+Terminal=false
+Categories=System;Utility;

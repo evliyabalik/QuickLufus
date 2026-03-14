@@ -1,0 +1,4 @@
+/home/johndoe/Documents/QuickLufus/publish/Lufus.pdb
+/home/johndoe/Documents/QuickLufus/publish/libHarfBuzzSharp.so
+/home/johndoe/Documents/QuickLufus/publish/libSkiaSharp.so
+/home/johndoe/Documents/QuickLufus/publish/Lufus

@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Lufus.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="500" Height="200"
+        CanResize="False"
+        x:Class="Lufus.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Quick Lufus">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid Background="LightSkyBlue">
+        <StackPanel Margin="20" Spacing="12">
+            <Grid RowDefinitions="auto,auto,auto,auto">
+                <TextBox x:Name="txtIso" Margin="20,0,0,0" IsReadOnly="True" 
+                         IsHitTestVisible="False" TextAlignment="Center" 
+                         Watermark="Iso Seç" HorizontalAlignment="Stretch"/>
+                
+                <Button x:Name="btnIso" Click="btnIso_Click" Content="..." 
+                        Grid.Column="1" Background="FloralWhite" 
+                        Foreground="Black" HorizontalAlignment="Right"/>
+                
+                <ComboBox x:Name="cmbUsb" Grid.Row="1" Margin="20,10,0,0" 
+                          Width="200" PlaceholderText="Usb Seç"/>
+                
+                <Button x:Name="btnYaz" Click="btnYaz_Click" Grid.Row="2" 
+                        Margin="20,10,0,0" Content="Yazdır" 
+                        Background="FloralWhite" Foreground="Black"/>
+
+                <ProgressBar x:Name="progress" Grid.Row="3" Height="25" 
+                             Value="0" Background="FloralWhite" 
+                             Foreground="Green" Margin="20,10,0,0" 
+                             HorizontalAlignment="Stretch"/>
+                
+                <TextBlock x:Name="txbProg" Grid.Row="3" Margin="20,10,0,0" 
+                           Foreground="Black" TextAlignment="Center"/>
+            </Grid>    
+        </StackPanel>    
+    </Grid>
+</Window>

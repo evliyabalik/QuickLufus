@@ -1,0 +1,10 @@
+Package: lufus
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: pkexec, util-linux
+Maintainer: johndoe <johndoe@example.com>
+Description: Quick USB ISO Writer for Linux
+ Lightweight USB ISO writing tool for Linux.
+ Similar to Rufus, native Linux support.
