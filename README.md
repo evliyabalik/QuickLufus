@@ -16,17 +16,17 @@ cd QuickLufus/Lufus
 dotnet publish -c Release -r linux-x64 --self-contained -p:PublishSingleFile=true -o ./publish
 ./publish/Lufus
 ```
-##Kullanım
+## Kullanım
 ISO dosyası seç
 USB cihaz seç (sda otomatik hariç)
 Yazdır butonuna tıkla
 
-##Gereksinimler
+## Gereksinimler
 Linux
 pkexec
 
-##Uyarı
+## Uyarı
 USB'deki tüm veriler silinir.
 
-##Lisans
+## Lisans
 MIT
